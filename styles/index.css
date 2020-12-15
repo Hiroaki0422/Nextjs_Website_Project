@@ -22,6 +22,9 @@ a {
   border-style: solid;
   border-color: gray;
 }
+.dropdown:hover {
+  transform: scale(1.2)
+}
 
 .cover_title {
   color: white;
@@ -192,8 +195,8 @@ a {
 }
 
 div.poetBlock {
-    width: 270px;
-    height:200px;
+    width: 150px;
+    height:150px;
     background-color: transparent;
     position:fixed;
     color: rgb(199, 21, 175); 
@@ -209,7 +212,7 @@ div.poetBlock {
 }
 
 .menu_bar {
-    width: 250px;
+    width: 280px;
     position: fixed;
     z-index: 1;
     top: 36px;
@@ -226,6 +229,11 @@ div.poetBlock {
   padding: 15px;
   margin: 20px;
   color: white;
+  z-index:4;
+  padding-left: 30px;
+}
+.menu_entry:hover {
+  transform: scale(1.3)
 }
 
 .fadeIn {

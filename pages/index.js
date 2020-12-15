@@ -9,7 +9,8 @@ const budFlowerImage = {
 }
 
 const editors = [{name:'TR_Brady', maxPage:4}, {name:'Brandon_Krieg', maxPage:1}, {name:'Annie_Christain', maxPage:4},
-{name:'Lydia_T._Liu', maxPage:1}]
+                {name:'Lydia_T._Liu', maxPage:1}, {name:'Astra_Papachristodoulou', maxPage:2}, {name:'Mandy_Gutmann_Gonzalez', maxPage:4},
+                {name:'Gina_Lee', maxPage:3}, {name:'Rosie_Stockton', maxPage:5}, {name:'Sophia_Terazawa', maxPage:9}]
 
 class Title extends React.Component {
     render () {
@@ -59,24 +60,14 @@ class MenuBar extends React.Component {
             contributors: false,
         }
     }
-    
-    toggleMasthead = () => {
-        console.log("called")
-        console.log(this)
-        this.setState({masthead: !this.state.masthead});
-    }
-
-    toggleEditorNote = () => {
-        this.setState({editorNote: !this.state.editorNote});
-    }
 
 
     render () {
         return (
             <div>
                 <div className='menu_bar'>
-                    <MenuEntry text={'Masthead'} toggle={this.toggleMasthead}/>
-                    <MenuEntry text={'Editor\'s Note'} toggle={this.toggleEditorNote}/>
+                    <MenuEntry text={'Masthead'} />
+                    <MenuEntry text={'Editor\'s Note'} />
                     <MenuEntry text={'Contributors'}/>
                 </div>
                 {this.state.masthead ? <Masthead toggle={this.toggleMasthead}/> : null}
@@ -166,6 +157,11 @@ class PoemBlocks extends React.Component {
                 <PoemBlock id={1}/>
                 <PoemBlock id={2}/>
                 <PoemBlock id={3}/>
+                <PoemBlock id={4}/>
+                <PoemBlock id={5}/>
+                <PoemBlock id={6}/>
+                <PoemBlock id={7}/>
+                <PoemBlock id={8}/>
             </div>
         );
     }
